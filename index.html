@@ -1,308 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="/favicon.ico">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Real-Time Wage Ticker | Watch Your Salary Grow by the Second</title>
-    <meta name="description" content="Enter your hourly wage or annual salary in USD ($) and watch your earnings tick upward in real-time every single second as you work.">
-    <link rel="canonical" href="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Real-Time Wage Ticker | Watch Your Salary Grow by the Second">
-    <meta property="og:description" content="Enter your hourly wage or annual salary in USD ($) and watch your earnings tick upward in real-time every single second as you work.">
-    <meta property="og:url" content="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/">
-    <meta property="og:site_name" content="Real-Time Second-by-Second Wage Ticker">
-    <meta property="og:image" content="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/og-image.png">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Real-Time Wage Ticker | Watch Your Salary Grow by the Second">
-    <meta name="twitter:description" content="Enter your hourly wage or annual salary in USD ($) and watch your earnings tick upward in real-time every single second as you work.">
-    <meta name="twitter:image" content="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/og-image.png">
-
-    <!-- Schema.org WebApplication -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real-Time Wage Ticker | Watch Your Salary Grow by the Second</title>
+<meta name="description" content="Turn your hourly wage or salary into pay per second, minute, day and year, then watch a live ticker count what you earn at work. Free and private.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/">
+<meta name="theme-color" content="#166534">
+<link rel="icon" href="/favicon.ico">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Real-Time Wage Ticker">
+<meta property="og:title" content="Real-Time Wage Ticker | Watch Your Salary Grow by the Second">
+<meta property="og:description" content="Turn your hourly wage or salary into pay per second, minute, day and year, then watch a live ticker count what you earn at work. Free and private.">
+<meta property="og:url" content="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/">
+<meta property="og:image" content="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Real-Time Wage Ticker | Watch Your Salary Grow by the Second">
+<meta name="twitter:description" content="Turn your hourly wage or salary into pay per second, minute, day and year, then watch a live ticker count what you earn at work. Free and private.">
+<meta name="twitter:image" content="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/og-image.png">
+<link rel="alternate" type="application/rss+xml" title="Real-Time Wage Ticker RSS" href="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/rss.xml">
+<link rel="sitemap" type="application/xml" href="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/sitemap.xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "Real-Time Second-by-Second Wage Ticker",
+      "@id": "https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/#webapp",
+      "name": "Real-Time Wage Ticker",
       "url": "https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/",
-      "description": "Enter your hourly wage or annual salary in USD ($) and watch your earnings tick upward in real-time every single second as you work.",
-      "applicationCategory": "EntertainmentApplication",
+      "applicationCategory": "FinanceApplication",
       "operatingSystem": "All",
-      "inLanguage": "en-US",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
+      "inLanguage": "en",
+      "description": "A free calculator that turns an hourly wage, paycheck or salary into gross pay per second, minute, hour, workday, week, month and year, with a live ticker that counts what you earn while you work.",
+      "image": "https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/og-image.png",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "How much do I make per second?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Divide your hourly pay by 3,600, the number of seconds in an hour. For a salary, first divide it by the hours you are paid for in a year: 2,080 for 40 hours a week and 52 weeks. For example, $52,000 a year is $25 an hour, about $0.42 a minute and $0.0069 a second." } },
+        { "@type": "Question", "name": "How many work hours are in a year?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A full-time year is usually counted as 2,080 hours: 40 hours a week for 52 weeks, with paid holidays and vacation included. The Occupational Employment and Wage Statistics survey run by the U.S. Bureau of Labor Statistics and state labor departments uses the same 2,080-hour year. If your schedule is different, change the hours per week or paid weeks per year." } },
+        { "@type": "Question", "name": "Is this before or after taxes?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Before taxes. The ticker uses the gross pay you enter. Your take-home pay is lower after income taxes, Social Security and Medicare taxes, and any deductions for benefits or retirement savings." } },
+        { "@type": "Question", "name": "Can it count breaks, overtime or a shift that already started?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Press Pause during an unpaid break and Resume when you are back. If you earn a higher overtime rate, change your pay to that rate while you work it: the ticker keeps what you have already earned and uses the new rate from that moment. If you forgot to press Start, enter the time you started work and press Count from this time." } },
+        { "@type": "Question", "name": "Is my salary saved or sent anywhere?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. The math runs in your browser and nothing is saved, so the numbers are gone when you close the page. Your pay goes into a link only when you press Copy result or Share link, so the person who opens the link sees the same result." } }
+      ]
     }
-    </script>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Layout Shield: Anti 390px Horizontal Overflow -->
-    <style id="layout-shield">
-        html, body {
-            max-width: 100% !important;
-            width: 100% !important;
-            overflow-x: hidden !important;
-        }
-        main, article, .container {
-            max-width: 100% !important;
-            box-sizing: border-box !important;
-        }
-        .manual-ad-box {
-            width: 100%;
-            max-width: 960px;
-            overflow: hidden;
-            margin: 12px auto;
-        }
-        .manual-ad-box ins {
-            max-width: 100% !important;
-            display: block;
-        }
-    </style>
-  <link rel="alternate" type="application/rss+xml" title="Real-Time Wage Ticker | Watch Your Salary Grow by the Second" href="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/rss.xml">
-  <link rel="sitemap" type="application/xml" href="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/sitemap.xml">
+  ]
+}
+</script>
+<!-- ADSENSE START: loader -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
+<!-- ADSENSE END: loader -->
+<style>
+:root{--bg:#f4faf5;--card:#fff;--ink:#132a1b;--muted:#5a6d60;--accent:#15803d;--line:#dcebdf;--r:#b91c1c}
+*{box-sizing:border-box}
+html,body{margin:0;max-width:100%;overflow-x:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.header{background:linear-gradient(135deg,#166534,#16a34a);color:#fff;text-align:center;padding:26px 16px 22px}
+.header h1{margin:0;font-size:1.7rem}
+.header-sub{opacity:.92;margin-top:6px;font-size:.95rem}
+.wrap{max-width:1080px;margin:0 auto;padding:12px 14px 8px}
+.grid2{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:1024px){.grid2{grid-template-columns:1fr 1fr;align-items:start}.result{position:sticky;top:12px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:14px 0}
+.grid2 .card{margin:0}
+.card h2{font-size:1.1rem;margin:0 0 10px}
+.card h3{font-size:1rem;margin:16px 0 8px}
+.lbl{display:block;font-weight:600;margin:10px 0 4px;font-size:.95rem}
+input[type=number],input[type=time],select{width:100%;font:inherit;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;align-items:end}
+.hint{font-size:.86rem;color:var(--muted);margin:6px 0}
+.btn{font:inherit;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:10px;padding:9px 14px;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.inline{display:flex;gap:8px;align-items:center}
+.inline input{flex:1 1 auto;min-width:0}
+.inline .btn{flex:0 0 auto}
+.err{color:var(--r);font-weight:600;margin:10px 0 0}
+.status-line{font-size:.88rem;color:var(--muted);margin:8px 0 0;min-height:1.2em}
+.tick{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:2.6rem;font-weight:800;color:var(--accent);letter-spacing:-.5px;line-height:1.15;margin:2px 0;word-break:break-all}
+.tick small{font-size:1.3rem;opacity:.65}
+.tick-sub{color:var(--muted);margin:2px 0}
+.tick-clock{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink);font-size:.95rem}
+.brk{width:100%;border-collapse:collapse}
+.brk th{text-align:left;font-weight:600;padding:7px 0;border-top:1px solid var(--line)}
+.brk td{text-align:right;padding:7px 0;border-top:1px solid var(--line);font-variant-numeric:tabular-nums}
+.brk tr.hl th,.brk tr.hl td{color:var(--accent);font-weight:800}
+.faq-item h3{font-size:1rem;margin:12px 0 4px}
+.faq-item p{margin:0;color:#35513e}
+.notice{border-color:#fcd34d;background:#fffbeb}
+.src{font-size:.85rem;color:var(--muted)}
+.ad-box{max-width:1080px;margin:10px auto;padding:0 14px;background:transparent;overflow:hidden;text-align:center}
+.ad-top ins{max-height:90px}
+.footer{text-align:center;font-size:.85rem;color:var(--muted);padding:18px 14px 28px}
+.footer a{color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#132a1b;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw}
+.toast.show{opacity:1}
+</style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+<body>
+<header class="header">
+  <h1>Real-Time Wage Ticker</h1>
+  <div class="header-sub">Your pay per second, minute, day and year · free, private, no sign-up</div>
+</header>
 
-    <!-- Header -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2 font-black text-slate-900 text-lg sm:text-xl tracking-tight">
-                <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm font-black shadow-sm">1P</span>
-                <span>Real-Time Second-by-Second Wage Ticker</span>
-            </a>
-            <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
-                2026 US Edition
-            </span>
-        </div>
-    </header>
+<!-- ADSENSE START: top -->
+<div class="ad-box ad-top">
+  <ins class="adsbygoogle" style="display:block;height:60px;max-height:90px" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3824727725" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: top -->
 
-    <!-- Main Workspace -->
-    <main class="max-w-6xl mx-auto px-4 py-6 flex-grow w-full">
-        <!-- Title Banner -->
-        <div class="mb-8 text-center max-w-2xl mx-auto">
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight mb-2">Real-Time Second-by-Second Wage Ticker</h1>
-            <p class="text-sm sm:text-base text-slate-600">Enter your hourly wage or annual salary in USD ($) and watch your earnings tick upward in real-time every single second as you work.</p>
-        </div>
-
-        <!-- 2-Column Gold Standard Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <!-- Left: Input Form (6 cols) -->
-            <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200">
-                <h2 class="text-base font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100 flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-                    <span>Input Parameters</span>
-                </h2>
-                
-        <div class="space-y-4">
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Primary Value / Amount ($)</label>
-                <div class="relative">
-                    <span class="absolute left-3 top-3 text-slate-400 font-bold">$</span>
-                    <input type="text" id="primaryVal" value="1,000" class="w-full pl-8 pr-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="1,000">
-                </div>
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Secondary Parameter / Multiplier</label>
-                <input type="number" id="secVal" value="12" min="1" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Calculation Category</label>
-                <select id="calcCat" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                    <option value="standard">Standard US Model (Benchmark)</option>
-                    <option value="conservative">Conservative Estimate (-10%)</option>
-                    <option value="growth">Accelerated Target (+15%)</option>
-                </select>
-            </div>
-        </div>
-        
-                <button type="button" onclick="calculate()" class="mt-6 w-full py-3.5 bg-blue-600 hover:bg-blue-700 active:scale-[0.99] text-white font-black text-base rounded-xl shadow-md transition duration-150 cursor-pointer whitespace-nowrap">
-                    Calculate Now
-                </button>
-            </div>
-
-            <!-- Right: Results Card (6 cols sticky) -->
-            <div class="lg:col-span-6 lg:sticky lg:top-24">
-                <div id="resultCard" class="hidden">
-                    
-        <div class="bg-blue-600 text-white p-6 rounded-2xl shadow-md mb-6">
-            <p class="text-xs uppercase font-bold tracking-wider opacity-90 mb-1">Estimated Annual Result</p>
-            <h3 id="resPrimary" class="text-3xl sm:text-4xl font-black tracking-tight">$0</h3>
-            <p class="text-xs mt-2 opacity-80">Calculated under standard US benchmarking formulas</p>
-        </div>
-        <div class="space-y-3 text-sm text-slate-700 bg-white p-5 rounded-2xl border border-slate-200">
-            <div class="flex justify-between pb-2 border-b border-slate-100">
-                <span class="text-slate-500">Monthly Equivalent:</span>
-                <span id="resMonthly" class="font-bold text-slate-900">$0</span>
-            </div>
-            <div class="flex justify-between pt-1">
-                <span class="font-bold text-slate-900">Growth / Variance Index:</span>
-                <span id="resBenchmark" class="font-black text-blue-600">0%</span>
-            </div>
-        </div>
-        
-                    <div class="mt-4 flex gap-3">
-                        <button type="button" onclick="copyResults()" class="flex-1 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm rounded-xl transition shadow-sm cursor-pointer whitespace-nowrap">
-                            Copy Results
-                        </button>
-                        <button type="button" onclick="resetForm()" class="px-5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm rounded-xl transition cursor-pointer whitespace-nowrap">
-                            Reset
-                        </button>
-                    </div>
-                </div>
-                <!-- Initial Placeholder -->
-                <div id="placeholderCard" class="p-8 text-center border-2 border-dashed border-slate-200 rounded-2xl text-slate-400">
-                    <p class="text-sm font-semibold">Enter your inputs on the left and click "Calculate Now" to view full projections.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- E-E-A-T Editorial FAQ Accordion -->
-        <section class="mt-14 max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-2xl border border-slate-200">
-            <h2 class="text-lg sm:text-xl font-black text-slate-900 mb-4">Frequently Asked Questions</h2>
-            <div class="space-y-3">
-                
-    <!-- In-Depth Guidebook CTA Banner (4-1-4 Compliance) -->
-    <div class="mt-8 mb-8 p-6 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl border border-indigo-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        <span class="inline-block px-3 py-1 bg-indigo-600 text-white text-xs font-bold rounded-full mb-2">COMPLETE 2026 HANDBOOK</span>
-        <h3 class="text-lg font-bold text-gray-900">Want to master the statutory details? Read our in-depth guide</h3>
-        <p class="text-xs text-gray-600 mt-1">Explore official calculation formulas, edge-case exemptions, and strategic checklists.</p>
+<main class="wrap">
+  <div class="grid2">
+    <section class="card" aria-labelledby="in-h">
+      <h2 id="in-h">1. Your pay</h2>
+      <div class="row2">
+        <div><label class="lbl" for="pay">Gross pay ($)</label><input id="pay" type="number" inputmode="decimal" min="0" step="any" placeholder="e.g. 25"></div>
+        <div><label class="lbl" for="per">Per</label>
+          <select id="per">
+            <option value="hour" selected>Hour</option>
+            <option value="week">Week</option>
+            <option value="biweek">Two weeks (biweekly)</option>
+            <option value="month">Month</option>
+            <option value="year">Year (salary)</option>
+          </select></div>
       </div>
-      <a href="/guides/guide.html" class="whitespace-nowrap px-5 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl shadow-md transition flex items-center gap-2 text-xs shrink-0">
-        Read In-Depth Guide &rarr;
-      </a>
-    </div>
+      <div class="row3">
+        <div><label class="lbl" for="hpw">Hours per week</label><input id="hpw" type="number" inputmode="decimal" step="any" value="40"></div>
+        <div><label class="lbl" for="dpw">Workdays per week</label><input id="dpw" type="number" inputmode="numeric" step="1" value="5"></div>
+        <div><label class="lbl" for="wpy">Paid weeks per year</label><input id="wpy" type="number" inputmode="decimal" step="any" value="52"></div>
+      </div>
+      <p class="hint">Use your pay before taxes. Count paid holidays and vacation as paid weeks. 40 hours × 52 weeks = 2,080 hours, the standard full-time year.</p>
+      <p class="err" id="err" role="alert" hidden></p>
+    </section>
 
-    <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>How accurate are these calculations?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Calculations use 2026 statutory formulas and verified standard economic models. While highly accurate for benchmarking, always consult a certified professional for individual legal or financial filings.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Is my personal or financial data stored?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        No. 100% of the computations occur locally in your browser's JavaScript engine. Zero personal or financial data is transmitted to or saved on external servers.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Can I export or share my calculation results?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Yes! Click the "Copy Results" button to copy a formatted summary with a link directly to your clipboard for sharing via Slack, email, or messaging apps.
-                    </p>
-                </details>
-            </div>
-        </section>
-    </main>
+    <section class="card result" aria-labelledby="out-h">
+      <h2 id="out-h">2. Live wage ticker</h2>
+      <div class="tick" id="tick" aria-live="off">$0.00<small>00</small></div>
+      <div class="tick-sub" id="tick-sub" aria-live="polite">Enter your pay to start the ticker.</div>
+      <div class="tick-clock" id="tick-clock">On the clock: 00:00:00</div>
+      <div class="actions">
+        <button type="button" class="btn primary" id="btn-start" disabled>▶ Start</button>
+        <button type="button" class="btn" id="btn-reset" disabled>↺ Reset</button>
+      </div>
+      <label class="lbl" for="since">Started work earlier?</label>
+      <div class="inline"><input id="since" type="time" value="09:00"><button type="button" class="btn" id="btn-since" disabled>Count from this time</button></div>
+      <p class="status-line" id="tick-msg" role="status"></p>
 
-    <!-- Floating Toast Notification -->
-    <div id="toastNotification" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white px-5 py-2.5 rounded-full text-xs font-bold shadow-2xl opacity-0 pointer-events-none transition-opacity duration-200 z-50">
-        Copied to clipboard!
-    </div>
+      <h3>Your pay, broken down</h3>
+      <table class="brk">
+        <tr class="hl"><th scope="row">Per second</th><td id="v-sec">–</td></tr>
+        <tr><th scope="row">Per minute</th><td id="v-min">–</td></tr>
+        <tr><th scope="row">Per hour</th><td id="v-hour">–</td></tr>
+        <tr><th scope="row" id="lbl-day">Per workday</th><td id="v-day">–</td></tr>
+        <tr><th scope="row">Per week</th><td id="v-week">–</td></tr>
+        <tr><th scope="row">Per month</th><td id="v-month">–</td></tr>
+        <tr><th scope="row">Per year</th><td id="v-year">–</td></tr>
+      </table>
+      <p class="hint" id="ms"></p>
+      <div class="actions">
+        <button type="button" class="btn primary" id="btn-copy" disabled>📋 Copy result</button>
+        <button type="button" class="btn" id="btn-share" disabled>📤 Share link</button>
+      </div>
+    </section>
+  </div>
 
-    <!-- Modern Trust Footer -->
-    <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500 mt-12">
-        <div class="max-w-6xl mx-auto px-4 space-y-3">
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-semibold text-slate-600">
-                <a href="/terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
-                <span class="text-slate-300">|</span>
-                <a href="/privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
-                <span class="text-slate-300">|</span>
-                <a href="/disclaimer.html" class="hover:text-blue-600 transition">Disclaimer</a>
-            </div>
-            <p class="max-w-xl mx-auto text-slate-400">
-                This tool is provided for educational and estimation purposes only. All calculations run client-side.
-            </p>
-            <p>&copy; 2026 Real-Time Second-by-Second Wage Ticker. All rights reserved.</p>
-        </div>
-    </footer>
+<!-- ADSENSE START: mid (right after the result card) -->
+<div class="ad-box ad-mid">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="1186914926" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: mid -->
 
-    <!-- Logic Script -->
-    <script>
-        
-        function calculate() {
-            const prim = parseFloat(document.getElementById('primaryVal').value.replace(/,/g, '')) || 0;
-            const sec = parseFloat(document.getElementById('secVal').value) || 1;
-            const cat = document.getElementById('calcCat').value;
-            
-            let mult = 1.0;
-            if (cat === 'conservative') mult = 0.90;
-            if (cat === 'growth') mult = 1.15;
-            
-            const total = prim * sec * mult;
-            const monthly = total / 12;
-            const rate = ((total / (prim || 1)) * 10).toFixed(1);
-            
-            document.getElementById('resPrimary').textContent = '$' + Math.round(total).toLocaleString('en-US');
-            document.getElementById('resMonthly').textContent = '$' + Math.round(monthly).toLocaleString('en-US');
-            document.getElementById('resBenchmark').textContent = rate + '%';
-            
-            document.getElementById('resultCard').classList.remove('hidden');
-        }
-        
+  <section class="card" aria-labelledby="how-h">
+    <h2 id="how-h">🧮 How the numbers work</h2>
+    <ul>
+      <li><strong>Hourly rate:</strong> a salary is divided by the hours you are paid for in a year, hours per week × paid weeks per year. The default 40 hours × 52 weeks makes 2,080 hours, the full-time year used in U.S. wage statistics. A biweekly paycheck is two weeks of pay, and a monthly amount is a twelfth of the year.</li>
+      <li><strong>Per second and per minute:</strong> the hourly rate divided by 3,600 and by 60.</li>
+      <li><strong>Per workday:</strong> weekly pay divided by your workdays per week. <strong>Per month:</strong> yearly pay divided by 12. That is an average, because months have different numbers of workdays.</li>
+      <li><strong>Live ticker:</strong> the time on the clock multiplied by your pay per second. It reads your device clock instead of counting ticks, so it stays accurate if your screen sleeps or you switch tabs. Pause stops the clock. Changing your pay keeps what you have earned and uses the new rate from then on.</li>
+      <li><strong>Before taxes:</strong> every figure is gross pay. Taxes and deductions are not taken out.</li>
+    </ul>
+    <p class="src">Source for the 2,080-hour full-time year: Occupational Employment and Wage Statistics technical notes (a U.S. Bureau of Labor Statistics program, as published by the New York State Department of Labor). Checked September 30, 2026.</p>
+  </section>
 
-        function copyResults() {
-            const resCard = document.getElementById('resultCard');
-            const lines = [];
-            lines.push("Real-Time Second-by-Second Wage Ticker - Calculation Summary");
-            lines.push("=============================");
-            resCard.querySelectorAll('.flex.justify-between').forEach(el => {
-                const k = el.querySelector('span:first-child')?.innerText || '';
-                const v = el.querySelector('span:last-child')?.innerText || '';
-                if (k && v) lines.push(k + ' ' + v);
-            });
-            lines.push("-----------------------------");
-            lines.push("👉 Try it here: https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/");
-            
-            const textToCopy = lines.join('\n');
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(textToCopy).then(() => showToast());
-            } else {
-                const ta = document.createElement('textarea');
-                ta.value = textToCopy;
-                document.body.appendChild(ta);
-                ta.select();
-                document.execCommand('copy');
-                document.body.removeChild(ta);
-                showToast();
-            }
-        }
+  <section class="card" id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">❓ Frequently asked questions</h2>
+    <div class="faq-item"><h3>How much do I make per second?</h3><p>Divide your hourly pay by 3,600, the number of seconds in an hour. For a salary, first divide it by the hours you are paid for in a year: 2,080 for 40 hours a week and 52 weeks. For example, $52,000 a year is $25 an hour, about $0.42 a minute and $0.0069 a second.</p></div>
+    <div class="faq-item"><h3>How many work hours are in a year?</h3><p>A full-time year is usually counted as 2,080 hours: 40 hours a week for 52 weeks, with paid holidays and vacation included. The Occupational Employment and Wage Statistics survey run by the U.S. Bureau of Labor Statistics and state labor departments uses the same 2,080-hour year. If your schedule is different, change the hours per week or paid weeks per year.</p></div>
+    <div class="faq-item"><h3>Is this before or after taxes?</h3><p>Before taxes. The ticker uses the gross pay you enter. Your take-home pay is lower after income taxes, Social Security and Medicare taxes, and any deductions for benefits or retirement savings.</p></div>
+    <div class="faq-item"><h3>Can it count breaks, overtime or a shift that already started?</h3><p>Press Pause during an unpaid break and Resume when you are back. If you earn a higher overtime rate, change your pay to that rate while you work it: the ticker keeps what you have already earned and uses the new rate from that moment. If you forgot to press Start, enter the time you started work and press Count from this time.</p></div>
+    <div class="faq-item"><h3>Is my salary saved or sent anywhere?</h3><p>No. The math runs in your browser and nothing is saved, so the numbers are gone when you close the page. Your pay goes into a link only when you press Copy result or Share link, so the person who opens the link sees the same result.</p></div>
+  </section>
 
-        function showToast() {
-            const t = document.getElementById('toastNotification');
-            t.classList.remove('opacity-0', 'pointer-events-none');
-            setTimeout(() => {
-                t.classList.add('opacity-0', 'pointer-events-none');
-            }, 2200);
-        }
+  <section class="card notice" aria-labelledby="note-h">
+    <h2 id="note-h">⚠️ Please note</h2>
+    <p>These are estimates of gross pay based on the numbers you enter. They are not a paycheck, payroll or tax calculation, and not financial, tax or legal advice. Your pay stubs and your employer's pay records show what you are actually paid.</p>
+  </section>
+</main>
 
-        function resetForm() {
-            document.getElementById('resultCard').classList.add('hidden');
-            document.getElementById('placeholderCard').classList.remove('hidden');
-        }
+<!-- ADSENSE START: bottom -->
+<div class="ad-box ad-bottom">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3416334507" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: bottom -->
 
-        // Auto calculate on load
-        window.addEventListener('DOMContentLoaded', () => {
-            calculate();
-            document.getElementById('placeholderCard').classList.add('hidden');
-        });
-    </script>
+<footer class="footer">
+  <p>A free real-time wage ticker. Everything runs on your device, and nothing you enter is saved or sent to us.</p>
+  <p><a href="/disclaimer.html">Disclaimer</a> | <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
+</footer>
+
+<div id="global-ux-toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- LOGIC START -->
+<script>
+(function () {
+  'use strict';
+  var SITE = 'https://us-real-time-hourly-wage-ticker.enjoy-onepage.com';
+  var TOOL_NAME = 'Real-Time Wage Ticker';
+  var PER = ['hour', 'week', 'biweek', 'month', 'year'];
+  var KEYS = ['sec', 'min', 'hour', 'day', 'week', 'month', 'year'];
+  var MAX_YEAR = 100000000;
+  var BASE_TITLE = document.title;
+
+  function $(id) { return document.getElementById(id); }
+  function on(id, ev, fn) { var el = $(id); if (el) el.addEventListener(ev, fn); }
+  function val(id) { var el = $(id); return el ? String(el.value).trim() : ''; }
+  function num(id) { var v = val(id); if (v === '') return null; var n = Number(v); return isFinite(n) ? n : NaN; }
+  function setText(id, t) { var el = $(id); if (el) el.textContent = t; }
+
+  /* ---------- pay math: gross pay; a full-time year is 40 h x 52 weeks = 2,080 h ---------- */
+  function annualOf(x) {
+    if (x.per === 'hour') return x.pay * x.h * x.w;
+    if (x.per === 'week') return x.pay * x.w;
+    if (x.per === 'biweek') return x.pay * x.w / 2;
+    if (x.per === 'month') return x.pay * 12;
+    return x.pay;
+  }
+  function hourlyOf(x) {
+    if (x.per === 'hour') return x.pay;
+    if (x.per === 'week') return x.pay / x.h;
+    if (x.per === 'biweek') return x.pay / (2 * x.h);
+    if (x.per === 'month') return x.pay * 12 / (x.h * x.w);
+    return x.pay / (x.h * x.w);
+  }
+  function breakdown(x) {
+    var A = annualOf(x), hr = hourlyOf(x);
+    return { sec: hr / 3600, min: hr / 60, hour: hr, day: A / x.w / x.d, week: A / x.w, month: A / 12, year: A };
+  }
+  function readInputs() {
+    var per = val('per');
+    return { pay: num('pay'), per: PER.indexOf(per) >= 0 ? per : 'hour', h: num('hpw'), d: num('dpw'), w: num('wpy') };
+  }
+  function validate(x) {
+    if (isNaN(x.pay) || x.pay <= 0) return 'Enter your pay as a number above $0.';
+    if (x.h === null || isNaN(x.h) || x.h < 1 || x.h > 100) return 'Hours per week should be between 1 and 100.';
+    if (x.d === null || isNaN(x.d) || x.d < 1 || x.d > 7 || Math.floor(x.d) !== x.d) return 'Workdays per week should be a whole number from 1 to 7.';
+    if (x.h / x.d > 24) return 'That is more than 24 hours a day. Check hours per week and workdays per week.';
+    if (x.w === null || isNaN(x.w) || x.w < 1 || x.w > 52) return 'Paid weeks per year should be between 1 and 52.';
+    if (annualOf(x) > MAX_YEAR) return 'That is more than $100 million a year. Check the amount and the pay period.';
+    return '';
+  }
+
+  /* ---------- formatting ---------- */
+  function money(v, dp) { return '$' + v.toLocaleString('en-US', { minimumFractionDigits: dp, maximumFractionDigits: dp }); }
+  function fmtN(v) { return v.toLocaleString('en-US', { maximumFractionDigits: 2 }); }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function units(v) { return Math.floor(v * 10000 + 1e-6); }
+  function tickHTML(v) { var u = units(v), r = u % 10000; return '$' + Math.floor(u / 10000).toLocaleString('en-US') + '.' + pad2(Math.floor(r / 100)) + '<small>' + pad2(r % 100) + '</small>'; }
+  function tickText(v) { var u = units(v); return '$' + Math.floor(u / 10000).toLocaleString('en-US') + '.' + pad2(Math.floor((u % 10000) / 100)); }
+  function hms(ms) { var s = Math.floor(ms / 1000); return pad2(Math.floor(s / 3600)) + ':' + pad2(Math.floor(s % 3600 / 60)) + ':' + pad2(s % 60); }
+  function dur(s) {
+    if (!(s >= 1)) return 'under a second';
+    s = Math.round(s);
+    var h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), r = s % 60, out = [];
+    if (h) out.push(h.toLocaleString('en-US') + ' hr');
+    if (m) out.push(m + ' min');
+    if (r && !h) out.push(r + ' sec');
+    return out.join(' ');
+  }
+
+  /* ---------- live ticker: time on the clock x pay per second, read from the device clock ---------- */
+  var cur = null;
+  var T = { running: false, bank: 0, bankMs: 0, since: 0, rate: 0, timer: null };
+  function earned(n) { return T.bank + (T.running ? (n - T.since) / 1000 * T.rate : 0); }
+  function onClock(n) { return T.bankMs + (T.running ? n - T.since : 0); }
+  function paint() {
+    var n = Date.now(), e = earned(n), el = $('tick');
+    if (el) el.innerHTML = tickHTML(e);
+    setText('tick-clock', 'On the clock: ' + hms(onClock(n)));
+    document.title = T.running ? tickText(e) + ' earned · ' + TOOL_NAME : BASE_TITLE;
+  }
+  function bankNow() {
+    if (!T.running) return;
+    var n = Date.now();
+    T.bank += (n - T.since) / 1000 * T.rate;
+    T.bankMs += n - T.since;
+    T.since = n;
+  }
+  function subLine() {
+    if (T.running) return 'Counting at ' + money(T.rate, 4) + ' a second.' + (cur ? '' : ' Fix step 1 to change your pay.');
+    if (!cur) return val('pay') === '' ? 'Enter your pay to start the ticker.' : 'Fix the value in step 1 to use the ticker.';
+    var r = money(cur.b.sec, 4) + ' a second';
+    if (T.bankMs > 0) return 'Paused. Press Resume to keep counting at ' + r + '.';
+    return 'You earn ' + r + '. Press Start when you clock in.';
+  }
+  function syncButtons() {
+    var s = $('btn-start');
+    if (s) { s.disabled = !T.running && !cur; s.textContent = T.running ? '⏸ Pause' : (T.bankMs > 0 ? '▶ Resume' : '▶ Start'); }
+    var r = $('btn-reset'); if (r) r.disabled = !T.running && T.bankMs === 0;
+    var f = $('btn-since'); if (f) f.disabled = !cur;
+    setText('tick-sub', subLine());
+  }
+  function run(fromMs) {
+    T.running = true; T.since = fromMs; T.rate = cur.b.sec;
+    clearInterval(T.timer); T.timer = setInterval(paint, 100);
+    paint(); syncButtons();
+  }
+  function pause() {
+    bankNow(); T.running = false; clearInterval(T.timer); T.timer = null;
+    paint(); syncButtons();
+  }
+  function reset() {
+    T.running = false; clearInterval(T.timer); T.timer = null; T.bank = 0; T.bankMs = 0; T.since = 0;
+    setText('tick-msg', ''); paint(); syncButtons();
+  }
+
+  /* ---------- results ---------- */
+  function setErr(m) { var e = $('err'); if (e) { e.textContent = m || ''; e.hidden = !m; } }
+  function fillBreakdown(b, x) {
+    KEYS.forEach(function (k) { setText('v-' + k, b ? money(b[k], k === 'sec' ? 4 : 2) : '–'); });
+    setText('lbl-day', b ? 'Per workday (' + fmtN(x.h / x.d) + ' hr)' : 'Per workday');
+    setText('ms', b ? 'Work time to earn $1: ' + dur(1 / b.sec) + ' · $100: ' + dur(100 / b.sec) + ' · $1,000: ' + dur(1000 / b.sec) : '');
+    ['btn-copy', 'btn-share'].forEach(function (id) { var el = $(id); if (el) el.disabled = !b; });
+  }
+  function render() {
+    var x = readInputs(), msg = x.pay === null ? '' : validate(x);
+    setErr(msg);
+    if (x.pay === null || msg) {
+      cur = null;
+      fillBreakdown(null, x);
+      syncButtons();
+      return;
+    }
+    var b = breakdown(x);
+    if (T.running) { bankNow(); T.rate = b.sec; }
+    cur = { x: x, b: b };
+    fillBreakdown(b, x);
+    syncButtons();
+    paint();
+  }
+
+  /* ---------- toast · copy · share (standard: Web Share -> clipboard -> honest message on failure) ---------- */
+  var toastTimer = null;
+  function showToastNotification(m) {
+    var el = $('global-ux-toast'); if (!el) return;
+    el.textContent = m; el.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(function () { el.classList.remove('show'); }, 2200);
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    showToastNotification(ok ? 'Copied! Paste it anywhere to share.' : 'Could not copy. Please copy the link from the address bar.');
+  }
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { showToastNotification('Copied! Paste it anywhere to share.'); }, function () { fallbackCopy(text); });
+    } else { fallbackCopy(text); }
+  }
+  function params(x) {
+    var q = new URLSearchParams();
+    q.set('pay', String(x.pay)); q.set('per', x.per); q.set('h', String(x.h)); q.set('d', String(x.d)); q.set('w', String(x.w));
+    return q.toString();
+  }
+  function link() { return cur ? SITE + '/?' + params(cur.x) : SITE + '/'; }
+  function summary() {
+    if (!cur) return '';
+    var b = cur.b, x = cur.x, n = Date.now();
+    var lines = ['💵 My pay by the second: ' + money(b.sec, 4),
+      '• Per minute: ' + money(b.min, 2),
+      '• Per hour: ' + money(b.hour, 2),
+      '• Per workday: ' + money(b.day, 2),
+      '• Per year: ' + money(b.year, 2),
+      'Before taxes · ' + fmtN(x.h) + ' hr a week · ' + x.d + ' days a week · ' + fmtN(x.w) + ' paid weeks a year'];
+    if (T.running || T.bankMs > 0) lines.push('⏱️ Ticker: ' + tickText(earned(n)) + ' in ' + hms(onClock(n)));
+    lines.push('👉 ' + TOOL_NAME + ': ' + link());
+    return lines.join('\n');
+  }
+
+  /* ---------- events ---------- */
+  ['pay', 'hpw', 'dpw', 'wpy'].forEach(function (id) { on(id, 'input', render); });
+  on('per', 'change', render);
+  on('btn-start', 'click', function () {
+    if (T.running) { pause(); return; }
+    if (!cur) return;
+    setText('tick-msg', '');
+    run(Date.now());
+  });
+  on('btn-reset', 'click', reset);
+  on('btn-since', 'click', function () {
+    if (!cur) return;
+    var m = /^(\d{1,2}):(\d{2})/.exec(val('since'));
+    if (!m || +m[1] > 23 || +m[2] > 59) { setText('tick-msg', 'Pick the time you started work.'); return; }
+    var n = Date.now(), d = new Date(n), y = false;
+    d.setHours(+m[1], +m[2], 0, 0);
+    if (d.getTime() > n) { d.setDate(d.getDate() - 1); y = true; }
+    reset();
+    run(d.getTime());
+    var t = d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+    setText('tick-msg', y ? 'Counting from ' + t + ' yesterday, because that time has not come yet today.' : 'Counting from ' + t + ' today.');
+  });
+  on('btn-copy', 'click', function () { if (cur) copyText(summary()); });
+  on('btn-share', 'click', function () {
+    if (!cur) return;
+    var text = summary();
+    if (navigator.share) { navigator.share({ title: TOOL_NAME, text: text, url: link() }).catch(function (e) { if (!e || e.name !== 'AbortError') copyText(text); }); }
+    else { copyText(text); }
+  });
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) paint(); });
+
+  /* ---------- start: URL parameters -> defaults ---------- */
+  (function init() {
+    var q; try { q = new URLSearchParams(location.search); } catch (e) { q = null; }
+    var set = function (id, v) { var el = $(id); if (el && v !== null && v !== undefined) el.value = v; };
+    if (q) {
+      if (q.has('pay')) set('pay', q.get('pay'));
+      if (PER.indexOf(q.get('per')) >= 0) set('per', q.get('per'));
+      if (q.has('h')) set('hpw', q.get('h'));
+      if (q.has('d')) set('dpw', q.get('d'));
+      if (q.has('w')) set('wpy', q.get('w'));
+    }
+    render();
+    paint();
+  })();
+})();
+</script>
+<!-- LOGIC END -->
 </body>
 </html>
