@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Real-Time Wage Ticker | Watch Your Salary Grow by the Second</title>
-<meta name="description" content="Turn your hourly wage or salary into pay per second, minute, day and year, then watch a live ticker count what you earn at work. Free and private.">
+<title>Real-Time Wage Ticker | Watch Your</title>
+<meta name="description" content="Turn your hourly wage or salary into pay per second, minute, day and year,">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/">
 <meta name="theme-color" content="#166534">
@@ -12,13 +12,13 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Real-Time Wage Ticker">
-<meta property="og:title" content="Real-Time Wage Ticker | Watch Your Salary Grow by the Second">
-<meta property="og:description" content="Turn your hourly wage or salary into pay per second, minute, day and year, then watch a live ticker count what you earn at work. Free and private.">
+<meta property="og:title" content="Real-Time Wage Ticker | Watch Your">
+<meta property="og:description" content="Turn your hourly wage or salary into pay per second, minute, day and year,">
 <meta property="og:url" content="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/">
 <meta property="og:image" content="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Real-Time Wage Ticker | Watch Your Salary Grow by the Second">
-<meta name="twitter:description" content="Turn your hourly wage or salary into pay per second, minute, day and year, then watch a live ticker count what you earn at work. Free and private.">
+<meta name="twitter:title" content="Real-Time Wage Ticker | Watch Your">
+<meta name="twitter:description" content="Turn your hourly wage or salary into pay per second, minute, day and year,">
 <meta name="twitter:image" content="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/og-image.png">
 <link rel="alternate" type="application/rss+xml" title="Real-Time Wage Ticker RSS" href="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/rss.xml">
 <link rel="sitemap" type="application/xml" href="https://us-real-time-hourly-wage-ticker.enjoy-onepage.com/sitemap.xml">
@@ -107,6 +107,25 @@ input[type=number],input[type=time],select{width:100%;font:inherit;padding:9px 1
 .footer a{color:var(--muted)}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#132a1b;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw}
 .toast.show{opacity:1}
+</style>
+<script id="math-guard">
+// Global Math & DOM Output Guard: prevents NaN / Infinity leaks to UI
+(function() {
+  const origToLocaleString = Number.prototype.toLocaleString;
+  Number.prototype.toLocaleString = function(locales, options) {
+    if (!Number.isFinite(this.valueOf())) return '0';
+    return origToLocaleString.call(this, locales, options);
+  };
+  const origToFixed = Number.prototype.toFixed;
+  Number.prototype.toFixed = function(digits) {
+    if (!Number.isFinite(this.valueOf())) return '0';
+    return origToFixed.call(this, digits);
+  };
+})();
+</script>
+<style id="ad-cls-shield">
+  .ad-bottom { min-height: 280px !important; }
+  .ad-bottom ins { min-height: 280px !important; }
 </style>
 </head>
 <body>
